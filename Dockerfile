@@ -64,9 +64,9 @@ RUN microdnf install -y \
     unzip
  
 # Download and install Node.js from binary
-RUN curl -fsSL https://nodejs.org/dist/v20.16.0/node-v20.16.0-linux-x64.tar.xz -o node-v20.16.0-linux-x64.tar.xz && \
-    tar -xJf node-v20.16.0-linux-x64.tar.xz -C /usr/local --strip-components=1 --no-same-owner && \
-    rm node-v20.16.0-linux-x64.tar.xz
+RUN curl -fsSL https://nodejs.org/dist/v20.5.1/node-v20.5.1-linux-x64.tar.xz -o node-v20.5.1-linux-x64.tar.xz && \
+    tar -xJf node-v20.5.1-linux-x64.tar.xz -C /usr/local --strip-components=1 --no-same-owner && \
+    rm node-v20.5.1-linux-x64.tar.xz
  
 # Install necessary dependencies for Chromium
 RUN microdnf install -y \
